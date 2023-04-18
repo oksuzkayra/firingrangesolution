@@ -1,0 +1,5 @@
+Script inclusions from locahost, for example http://127.0.0.2/localhost_import.js - https://public-firing-range.appspot.com/remoteinclude/parameter/script?q=http://127.0.0.1:9090/exploit.js
+
+Script inclusions from private-network IP addresses, for example http://192.168.1.2/private_network_import.js - https://public-firing-range.appspot.com/remoteinclude/parameter/script?q=http://127.0.0.1:9090/exploit.js
+
+Script inclusions from non-registered domains or typosquatting domains, for example http://g00gle.com/typosquatting_domain.js - https://public-firing-range.appspot.com/remoteinclude/parameter/script?q=http://127.0.0.1:9090/exploit.js

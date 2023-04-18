@@ -1,0 +1,38 @@
+Location.hash
+
+Location.hash - assign - assign
+Location.hash - documentwrite
+Location.hash - documentwriteln
+Location.hash - eval - alert(1)
+Location.hash - innerHtml
+Location.hash - range.createContextualFragment
+Location.hash - replace
+Location.hash - setTimeout
+Location.hash - function - alert(1)
+
+Location.hash - onclick setAttribute
+Location.hash - onclick addEventListener
+Location.hash - javascript url
+Location.hash - inline event handler
+Location.hash - form action
+
+Location
+
+location - assign
+location - documentwrite
+location - documentwriteln
+location - eval
+location - innerHtml
+Location - range.createContextualFragment
+location - replace
+Location - setTimeout
+
+Others
+
+documentURI - documentwrite
+baseURI - documentwrite
+location.href - documentwrite
+location.pathname - documentwrite
+location.search - documentwrite
+URL - documentwrite
+URL Unencoded - documentwrite

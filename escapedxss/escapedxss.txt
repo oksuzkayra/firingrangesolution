@@ -1,0 +1,60 @@
+HTML Contexts
+
+
+Body - HTML escaped - 
+Body - URL escaped - 
+Head - HTML escaped - 
+Head - URL escaped - 
+Body HTML comment - HTML escaped - 
+Body HTML comment - URL escaped - 
+Textarea - HTML escaped - 
+Textarea - URL escaped - 
+Tag name - HTML escaped - img%20src=x%20onerror=alert(1)
+Tag name - URL escaped - 
+Attribute unquoted - HTML escaped - 
+Attribute unquoted - URL escaped - 
+Attribute single quoted - HTML escaped - 
+Attribute single quoted - URL escaped - 
+Attribute double quoted - HTML escaped - 
+Attribute double quoted - URL escaped - 
+Attribute name - HTML escaped - 
+Attribute name - URL escaped - 
+
+CSS context
+
+CSS - HTML escaped - 
+CSS - URL escaped - 
+CSS Value - HTML escaped - 
+CSS Value - URL escaped - 
+CSS Font Name - HTML escaped - 
+CSS Font Name - URL escaped - 
+
+JS context
+
+Javascript unquoted assignment - HTML escaped - alert(1);foo;
+Javascript unquoted assignment - URL escaped - 
+Javascript eval - HTML escaped - alert(1)
+Javascript eval - URL escaped - Pipes the parameter into an eval, i.e. eval(%q);
+Javascript quoted string - HTML escaped - a";alert(1);"
+Javascript quoted string - URL escaped - Assigns the parameter value to an quoted js assignment, i.e. var foo = "%q";
+Javascript single quoted string - HTML escaped - a%27;alert(1);%27
+Javascript single quoted string - URL escaped - 
+Javascript slash quoted string - HTML escaped - a/;alert(1);/
+Javascript slash quoted string - URL escaped - 
+Javascript comment - HTML escaped - a"*/;alert(1);""/*
+Javascript comment - URL escaped - 
+
+URLs
+
+Script SRC double quoted - HTML escaped - 
+Script SRC double quoted - URL escaped - 
+URL - HREF - HTML escaped - 
+URL - HREF - URL escaped - 
+URL - CSS - HTML escaped - 
+URL - CSS - URL escaped - 
+
+JS eval context
+
+Eval payload after applying escape()
+Eval payload after applying encodeURIComponent() - alert(1)
+Eval payload after escaping <, & and >() - alert(1)

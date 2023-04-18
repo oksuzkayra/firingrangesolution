@@ -1,0 +1,11 @@
+Full URL
+
+alert(1) in remoteinclude.js
+<script>alert(1)</script> in remoteinclude.html
+
+
+Remote inclusion - SCRIPT - Parameter - ?q=http://127.0.0.1/remoteinclude.js
+Remote inclusion - SCRIPT - Hash - #http://127.0.0.1/remoteinclude.js
+Remote inclusion - OBJECT [Raw] - Parameter - ?q=http://127.0.0.1/remoteinclude.html
+Remote inclusion - OBJECT [Flash] - Parameter - eklenti desteklenmiyor.
+Remote inclusion - OBJECT [Raw] - Hash - #http://127.0.0.1/remoteinclude.html

